@@ -10,6 +10,9 @@ export default function Select({ text, name, options, handleOnChange, value }) {
       <label htmlFor={name}>{text}:</label>
       <select name={name} id={name}>
         <option>Choose an option</option>
+        {options.map((opt) => (
+          <option id={opt.id} key={opt.id}>{opt.name}</option>
+        ))}
       </select>
     </div>
   );
@@ -18,7 +21,7 @@ export default function Select({ text, name, options, handleOnChange, value }) {
 Select.propTypes = {
   text: PropTypes.string,
   name: PropTypes.string.isRequired,
-  // options: PropTypes.string,
+  options: PropTypes.arrayOf(PropTypes.object),
   handleOnChange: PropTypes.func,
   value: PropTypes.string,
 };
