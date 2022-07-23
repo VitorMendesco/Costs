@@ -9,14 +9,17 @@
 }
 
 .min_height {
+    /* size */
     min-height: 75%;
 }
 
 .start {
+    /* display */
     justify-content: start;
 }
 
 .column {
+    /* display */
     flex-direction: column;
     justify-content: flex-start;
 }

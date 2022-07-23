@@ -7,12 +7,25 @@
   box-sizing: border-box;
   /* text */
   font-size: 16px;
-  color: #000;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
+}
+
+:root {
+  --Y: #FFBB33;
+  --B: #222;
 }
 
 html, body, #root {
   background-color: #EFEFEF;
   height: 100%;
+}
+
+.App {
+  /* size */
+  height: 100vh;
+  /* display */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

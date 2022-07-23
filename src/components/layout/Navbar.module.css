@@ -1,17 +1,32 @@
-.nav_wrapper {
+.navbar {
+  /* position */
+  padding: 1em;
   /* display*/
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  /* color */
+  background-color: var(--B);
 }
 
-.nav_wrapper ul {
+.list {
   /* display*/
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
   /* misc */
   list-style: none;
 }
 
-.nav_wrapper ul > * {
+.item {
+  /* position */
   margin: 0 1em;
+}
+.item a {
+  /* text */
+  color: #FFF;
+  text-decoration: none;
+  user-select: none;
+}
+.item a:hover {
+  /* color */
+  color: var(--Y);
 }
