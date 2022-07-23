@@ -7,18 +7,31 @@
   box-sizing: border-box;
   /* text */
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
+
+  /* prevent drag and select */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 :root {
-  --Y: #FFBB33;
+  /* colors */
+  --Y: #ffbb33;
   --B: #222;
+  --G: #7b7b7b;
 }
 
-html, body, #root {
-  background-color: #EFEFEF;
+html,
+body,
+#root {
+  /* size */
   height: 100%;
+  /* color */
+  background-color: #efefef;
 }
 
 .App {

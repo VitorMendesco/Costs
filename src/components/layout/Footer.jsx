@@ -7,16 +7,22 @@ export default function Footer() {
     <footer className={styles.footer}>
       <ul className={styles.social_list}>
         <li>
+          <a href="https://github.com/VitorMendesco" target="_blank" rel="noreferrer" draggable={false}>
           <FaGithub />
+          </a>
         </li>
         <li>
+          <a href="https://www.linkedin.com/in/vitor-mendesco/" target="_blank" rel="noreferrer" draggable={false}>
           <FaLinkedin />
+          </a>
         </li>
         <li>
+          <a href="https://www.instagram.com/_mendesco/" target="_blank" rel="noreferrer" draggable={false}>
           <FaInstagram />
+          </a>
         </li>
       </ul>
-      <p className={styles.copyright}><span>Costs</span> &copy; 2022</p>
+      <p className={styles.copyright}><span>Vitor Mendes</span> &copy; 2022</p>
     </footer>
   );
 }

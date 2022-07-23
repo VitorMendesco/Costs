@@ -18,7 +18,11 @@
   /* position */
   margin: 0 1em;
 }
-.social_list li:hover {
+.social_list a {
+  /* color */
+  color: #fff;
+}
+.social_list a:hover {
   /* color */
   color: var(--Y);
 }

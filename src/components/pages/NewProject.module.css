@@ -1,0 +1,15 @@
+.newproject_container {
+  /* size */
+  width: 450px;
+  /* position */
+  margin: 0 auto;
+  padding: 3em;
+}
+.newproject_container h1 {
+  /* position */
+  margin-bottom: 0.5em;
+}
+.newproject_container p {
+  /* color */
+  color: var(--G);
+}

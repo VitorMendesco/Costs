@@ -1,25 +1,25 @@
 .container {
-    /* size */
-    width: 1200px;
-    margin: 0 auto;
-    /* display */
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  /* size */
+  width: 1200px;
+  margin: 0 auto;
+  /* display */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .min_height {
-    /* size */
-    min-height: 75%;
+  /* size */
+  min-height: 75%;
 }
 
 .start {
-    /* display */
-    justify-content: start;
+  /* display */
+  justify-content: start;
 }
 
 .column {
-    /* display */
-    flex-direction: column;
-    justify-content: flex-start;
+  /* display */
+  flex-direction: column;
+  justify-content: flex-start;
 }

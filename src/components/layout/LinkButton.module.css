@@ -1,0 +1,15 @@
+.btn {
+  /* position */
+  padding: 0.5em 1em;
+  /* text */
+  text-decoration: none;
+  /* color */
+  background-color: var(--B);
+  color: #fff;
+  /* misc */
+  transition: color 0.5s;
+}
+.btn:hover {
+  /* color */
+  color: var(--Y);
+}
