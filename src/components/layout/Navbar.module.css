@@ -1,0 +1,17 @@
+.nav_wrapper {
+  /* display*/
+  display: flex;
+  justify-content: center;
+}
+
+.nav_wrapper ul {
+  /* display*/
+  display: flex;
+  justify-content: space-evenly;
+  /* misc */
+  list-style: none;
+}
+
+.nav_wrapper ul > * {
+  margin: 0 1em;
+}
