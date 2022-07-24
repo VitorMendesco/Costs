@@ -21,7 +21,7 @@ export default function Input({
         id={name}
         placeholder={placeholder}
         onChange={handleOnChange}
-        value={value || ""}
+        value={value}
       />
     </div>
   );
@@ -39,4 +39,5 @@ Input.propTypes = {
 
 Input.defaultProps = {
   type: "text",
+  value: "",
 };

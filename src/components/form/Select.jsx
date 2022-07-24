@@ -8,12 +8,7 @@ export default function Select({ text, name, options, handleOnChange, value }) {
   return (
     <div className={styles.form_control}>
       <label htmlFor={name}>{text}:</label>
-      <select
-        name={name}
-        id={name}
-        onChange={handleOnChange}
-        value={value || ""}
-      >
+      <select name={name} id={name} onChange={handleOnChange} value={value}>
         <option>Choose an option</option>
         {options.map((option) => (
           <option id={option.id} key={option.id}>
@@ -28,9 +23,11 @@ export default function Select({ text, name, options, handleOnChange, value }) {
 Select.propTypes = {
   text: PropTypes.string,
   name: PropTypes.string.isRequired,
-  options: PropTypes.arrayOf(PropTypes.object),
+  options: PropTypes.arrayOf(PropTypes.object).isRequired,
   handleOnChange: PropTypes.func,
   value: PropTypes.string,
 };
 
-Select.defaultProps = {};
+Select.defaultProps = {
+  value: "",
+};

@@ -10,11 +10,7 @@ import styles from "./NewProject.module.css";
 export default function NewProject() {
   const navigate = useNavigate();
 
-  function createPost(project) {
-    // initialize costs and services
-    project.cost = 0;
-    project.services = [];
-
+  function createProject(project) {
     fetch("http://localhost:5000/projects", {
       method: "POST",
       headers: {
@@ -24,16 +20,18 @@ export default function NewProject() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        navigate("/projects", { message: "Project created!" });
+        navigate("/projects", {
+          state: { message: "Project successfully created!" },
+        });
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.error(err));
   }
 
   return (
     <div className={styles.newproject_container}>
       <h1>New Project</h1>
       <p>Create your project and add services later</p>
-      <ProjectForm handleSubmit={createPost} btnText="Create Project" />
+      <ProjectForm handleSubmit={createProject} btnText="Create Project" />
     </div>
   );
 }

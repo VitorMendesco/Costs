@@ -1,5 +1,5 @@
 // react
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 // components
@@ -27,11 +27,12 @@ export default function ProjectForm({ handleSubmit, projectData, btnText }) {
       .catch((err) => console.log(err));
   }, []);
 
-  // CREATE OR EDIT SETUP
+  // CREATE OR EDIT VERIFICATION
   const [project, setProject] = useState(projectData || {});
+
   // SEND TO BACKEND
-  const submit = (event) => {
-    event.preventDefault();
+  const submit = (e) => {
+    e.preventDefault();
     handleSubmit(project);
   };
 
@@ -41,38 +42,39 @@ export default function ProjectForm({ handleSubmit, projectData, btnText }) {
         type="text"
         text="Project Name"
         name="name"
-        value={project.name ? project.name : ""}
         handleOnChange={handleChange}
+        value={project.name ? project.name : ''}
       />
       <Input
         type="number"
         text="Total Budget"
         name="budget"
-        value={project.budget ? project.budget : ""}
         handleOnChange={handleChange}
+        value={project.budget ? project.budget : ''}
       />
       <Select
         name="category_id"
         text="Select Category"
-        value={project.category ? project.category.name : ""}
         options={categories}
         handleOnChange={handleCategory}
+        value={project.category ? project.category.name : ''}
       />
       <SubmitButton text={btnText} />
     </form>
   );
 
-  // update project obj's name and budget
-  function handleChange(event) {
-    setProject({ ...project, [event.target.name]: event.target.value });
+  // set project name and budget
+  function handleChange(e) {
+    setProject({ ...project, [e.target.name]: e.target.value });
   }
-  // update category choosed
-  function handleCategory(event) {
+
+  // set project category
+  function handleCategory(e) {
     setProject({
       ...project,
       category: {
-        id: event.target.options[event.target.selectedIndex].id,
-        name: event.target.options[event.target.selectedIndex].text,
+        id: e.target.options[e.target.selectedIndex].id,
+        name: e.target.options[e.target.selectedIndex].text,
       },
     });
   }
