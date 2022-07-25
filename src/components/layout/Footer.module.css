@@ -1,6 +1,7 @@
 .footer {
   /* position */
   padding: 1.5em;
+  margin-top: 4em;
   text-align: center;
   /* color */
   background-color: var(--B);
