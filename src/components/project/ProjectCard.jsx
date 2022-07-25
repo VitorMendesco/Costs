@@ -8,7 +8,12 @@ import { Link } from "react-router-dom";
 import styles from "./ProjectCard.module.css";
 import { BsPencil, BsFillTrashFill } from "react-icons/bs";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, handleRemove }) {
+  const remove = (event) => {
+    event.preventDefault();
+    handleRemove(project.id);
+  };
+
   return (
     <div className={styles.project_card}>
       <h4>{project.name}</h4>
@@ -26,10 +31,10 @@ export default function ProjectCard({ project }) {
         {project.category.name}
       </p>
       <div className={styles.project_card_actions}>
-        <Link to="/">
+        <Link to={`/project/${project.id}`}>
           <BsPencil /> Edit
         </Link>
-        <button>
+        <button onClick={remove}>
           <BsFillTrashFill /> Delete
         </button>
       </div>
@@ -39,4 +44,5 @@ export default function ProjectCard({ project }) {
 
 ProjectCard.propTypes = {
   project: PropTypes.object.isRequired,
+  handleRemove: PropTypes.func.isRequired,
 };

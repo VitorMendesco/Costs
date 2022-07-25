@@ -10,15 +10,6 @@
       "id": 1
     },
     {
-      "name": "amo meu mu",
-      "budget": "0",
-      "category": {
-        "id": "2",
-        "name": "Development"
-      },
-      "id": 2
-    },
-    {
       "name": "costs",
       "budget": "50000",
       "category": {
@@ -26,33 +17,6 @@
         "name": "Infrastructure"
       },
       "id": 3
-    },
-    {
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "name": "ish",
-      "budget": "250",
-      "id": 4
-    },
-    {
-      "category": {
-        "id": "4",
-        "name": "Management"
-      },
-      "name": "test",
-      "budget": "123456",
-      "id": 5
-    },
-    {
-      "name": "test2",
-      "budget": "9845",
-      "category": {
-        "id": "4",
-        "name": "Management"
-      },
-      "id": 6
     }
   ],
   "categories": [

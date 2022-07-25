@@ -19,6 +19,8 @@ export default function Projects() {
   if (location.state) {
     message = location.state.message;
   }
+  // REMOVE MESSAGE
+  const [projectMessage, setProjectMessage] = useState("");
 
   // PROJECT REQUESTER
   const [projects, setProjects] = useState([]);
@@ -49,10 +51,15 @@ export default function Projects() {
         <LinkButton to="/newproject" text="New Project" />
       </div>
       {message && <Message msg={message} type="success" />}
+      {projectMessage && <Message msg={projectMessage} type="success" />}
       <Container customClass="start">
         {projects.length > 0 &&
           projects.map((project) => (
-            <ProjectCard project={project} key={project.id} />
+            <ProjectCard
+              project={project}
+              handleRemove={removeProject}
+              key={project.id}
+            />
           ))}
         {!removeLoading && <Loader />}
         {removeLoading && projects.length === 0 && (
@@ -61,4 +68,20 @@ export default function Projects() {
       </Container>
     </div>
   );
+
+  // HANDLE REMOVE
+  function removeProject(id) {
+    fetch(`http://localhost:5000/projects/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setProjects(projects.filter((project) => project.id !== id));
+        setProjectMessage("Project successfully removed");
+      })
+      .catch((err) => console.error(err));
+  }
 }
