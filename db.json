@@ -44,6 +44,15 @@
       "name": "test",
       "budget": "123456",
       "id": 5
+    },
+    {
+      "name": "test2",
+      "budget": "9845",
+      "category": {
+        "id": "4",
+        "name": "Management"
+      },
+      "id": 6
     }
   ],
   "categories": [
