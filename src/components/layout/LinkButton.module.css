@@ -1,4 +1,6 @@
 .btn {
+  /* size */
+  height: fit-content;
   /* position */
   padding: 0.5em 1em;
   /* text */

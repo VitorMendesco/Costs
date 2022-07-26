@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Arkade",
-      "budget": "57200",
+      "budget": "98400",
       "category": {
         "id": "2",
         "name": "Development"
@@ -10,13 +10,22 @@
       "id": 1
     },
     {
-      "name": "costs",
-      "budget": "50000",
+      "name": "Costs",
+      "budget": "1000",
       "category": {
-        "id": "1",
-        "name": "Infrastructure"
+        "id": "4",
+        "name": "Management"
       },
       "id": 3
+    },
+    {
+      "name": "One Piece",
+      "budget": "125000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "id": 4
     }
   ],
   "categories": [
