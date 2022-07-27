@@ -18,8 +18,15 @@
         "id": "4",
         "name": "Management"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 2600,
+      "services": [
+        {
+          "name": "JS squad",
+          "cost": "2600",
+          "description": "Hire temporary members to develop the JS base ",
+          "id": "8ec6cf79-485b-4542-b817-390b983eb52f"
+        }
+      ],
       "id": 2
     }
   ],

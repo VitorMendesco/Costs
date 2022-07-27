@@ -1,33 +1,47 @@
- # **Costs**
+# **Costs**
+
 <div align="center">
 <img alt="prints" width="40%" src="public/coin_readme.gif">
 </div>
 
+#
+
 <p style="font-size: 1rem; color: #fff; font-weight: 700;">Costs é um projeto de gerenciamento de projetos, abusivamente original e útil, que estou usando para me introduzir ao ambiente React.</p>
 
-###
+#
 
 <p style="font-size: 1rem; color: #fff; font-weight: 700;">Costs is a project management project, abusively original and useful, that I'm using to introduce myself into the React environment.</p>
 
 #
+
 **<p align=left style="font-size: 1.5rem; color: #C41A29"><u>Acknowledgements</u></p>**
 
- - [Matheus Battisti's Course](https://www.youtube.com/watch?v=FXqX7oof0I4&ab_channel=MatheusBattisti-HoradeCodar)
- - [Matheus Battisti's Profile](https://github.com/matheusbattisti)
-
+- [Matheus Battisti's Course](https://www.youtube.com/watch?v=FXqX7oof0I4&ab_channel=MatheusBattisti-HoradeCodar)
+- [Matheus Battisti's Profile](https://github.com/matheusbattisti)
 
 <div align="center" style="display: inline_block;">
-  <img align="center" alt="print1" width="90%" src="public/img/print1.png">
-  
-  ##
+  <img align="center" alt="print1" width="80%" src="public/readme/print1.png">
 
-  <img align="center" alt="print2" width="90%" src="public/img/print2.png">
+##
+
+  <img align="center" alt="print2" width="80%" src="public/readme/print2.png">
+
+##
+
+  <img align="center" alt="print2" width="80%" src="public/readme/print2.png">
+
+##
+
+  <img align="center" alt="print2" width="80%" src="public/readme/print2.png">
 </div>
 <br />
 
 #
-## 
-><p align=center style="font-size: 1.6rem">Tecnologias</p>
+
+##
+
+> <p align=center style="font-size: 1.6rem">Tecnologias</p>
+
 <div align="center" style="display: inline_block;">
   <a href="https://devdocs.io/react/" target="_blank">
   <img align="center" alt="Vitor-REACT" height="90" width="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
