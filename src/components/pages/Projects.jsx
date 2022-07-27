@@ -71,6 +71,7 @@ export default function Projects() {
 
   // HANDLE REMOVE
   function removeProject(id) {
+    setDeleteMessage("");
     fetch(`http://localhost:5000/projects/${id}`, {
       method: "DELETE",
       headers: {

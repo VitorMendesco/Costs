@@ -11,6 +11,10 @@ export default function NewProject() {
   const navigate = useNavigate();
 
   function createProject(project) {
+
+    project.cost = 0.0;
+    project.services = [];
+
     fetch("http://localhost:5000/projects", {
       method: "POST",
       headers: {

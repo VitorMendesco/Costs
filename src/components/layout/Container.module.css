@@ -1,7 +1,7 @@
 .container {
   /* size */
   width: 1200px;
-  height: 100%;
+  height: fit-content;
   /* position */
   margin: 0 auto;
   /* display */
@@ -13,6 +13,10 @@
 .min_height {
   /* size */
   min-height: 75%;
+}
+
+.container_app {
+  overflow-y: scroll;
 }
 
 .start {

@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        <Container customClass="min_height">
+        <Container customClass="min_height container_app">
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />

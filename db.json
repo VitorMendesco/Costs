@@ -7,25 +7,20 @@
         "id": "2",
         "name": "Development"
       },
+      "cost": 0,
+      "services": [],
       "id": 1
     },
     {
       "name": "Costs",
-      "budget": "1000",
+      "budget": "5000",
       "category": {
         "id": "4",
         "name": "Management"
       },
-      "id": 3
-    },
-    {
-      "name": "One Piece",
-      "budget": "125000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "id": 4
+      "cost": 0,
+      "services": [],
+      "id": 2
     }
   ],
   "categories": [
