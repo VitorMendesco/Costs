@@ -17,15 +17,14 @@
 > 
 > **`Running Tutorial`**
 >><br />
->>1 - You will need to open **2 terminals**<br />
->>2 - At projects folder, open a terminal and type:
+>>
+>>1. You will need to open **2 terminals**<br />
+>>2. At projects folder, open a terminal and type:
 >>
 >>>**`npm run backend`**
->>
->>3 - Open another terminal and type:
+>>3. Open another terminal and type:
 >>>**`npm start`**
->>
->>4 - Now, just open in your browser at **URL**:
+>>4. Now, just open in your browser at **URL**:
 >>>**`http://localhost:3000/`**
 >>
 >><br />
