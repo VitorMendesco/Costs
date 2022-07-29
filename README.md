@@ -14,6 +14,24 @@
 
 #
 
+> 
+> **`Running Tutorial`**
+>><br />
+>>1 - You will need to open **2 terminals**<br />
+>>2 - At projects folder, open a terminal and type:
+>>
+>>>**`npm run backend`**
+>>
+>>3 - Open another terminal and type:
+>>>**`npm start`**
+>>
+>>4 - Now, just open in your browser at **URL**:
+>>>**`http://localhost:3000/`**
+>>
+>><br />
+
+#
+
 **<p align=left style="font-size: 1.5rem; color: #C41A29"><u>Acknowledgements</u></p>**
 
 - [Matheus Battisti's Course](https://www.youtube.com/watch?v=FXqX7oof0I4&ab_channel=MatheusBattisti-HoradeCodar)
